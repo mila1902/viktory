@@ -1,0 +1,25 @@
+
+<html>
+    <head>
+        <title>RANDOM</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    
+    <body>
+        <input type="button" value="Рандомное число от 1 до 100" id="button" class="custom-btn btn-16">
+        <div id="div"></div>
+        <script type="text/javascript">
+            function Random (){ 
+            const max = 100;
+            return Math.round(Math.random() * max );
+            }
+    
+            const btn = document.getElementById('button');
+            const div = document.getElementById('div');
+    
+            btn.onclick = function() {
+            div.innerHTML = Random();
+            }
+        </script>
+    </body>
+</html>
